@@ -1,0 +1,40 @@
+
+CCS3 Conventions:
+Class Naming:
+Utilizar nombres significativos o genéricos para las clases. Estos nombres deben ser fácilmente entendibles y ser pocos propensos al cambio de nombre.
+BUENO
+.gallery {}
+.login {}
+.aux {}
+MALO
+.yee-1901 {}
+.button-green {}
+Class Name Delimiters:
+Separar palabras en un nombre de clase con guiones. No se deben concatenar las palabras ni abreviaciones
+BUENO
+.video-id {}
+.ads-sample {}
+MALO
+.demoimage {}
+.error_status {}
+Type Selectors:
+Evitar calificar los nombres de clases con selectores de tipo. A menos que sea necesario, no se debe usar nombres de elementos en conjunto con las clases.
+BUENO
+.error {}
+MALO
+div.error {}
+Declaration Order
+Se recomienda ordenar alfabéticamente. Reordenar las declaraciones constantemente dentro del proyecto. De esta manera, el código es fácil de aprender, recordar y mantener.
+Declaration Stops
+Utilizar punto y coma luego de cada declaración. Esto con razones de de consistencia y extensibilidad del código.
+BUENO
+.test {
+  display: block;
+  height: 100px;
+}
+
+MALO
+.test {
+  display: block
+  height: 100px
+}
