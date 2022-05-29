@@ -8,14 +8,15 @@ Grupo 5
 Integrantes:
 
 Nombres, Apellidos y Códigos
-- Harvy Fabian, Ballena Rojas           U201814765 
 <br>
-- Sebastian Estephano, Cruz Guerra      U201711565
+- Harvy Fabian, Ballena Rojas              U201814765 
 <br>
-- José Karim, Candela Rengifo           U20201B005
+- Sebastian Estephano, Cruz Guerra         U201711565
 <br>
-- Cristhian Gabriel, Gómez De la Cruz   U202020341
+- José Karim, Candela Rengifo              U20201B005
 <br>
-- Juliana Alexandra, Yauricasa Seguil   U20201B782
+- Cristhian Gabriel, Gómez De la Cruz      U202020341
+<br>
+- Juliana Alexandra, Yauricasa Seguil      U20201B782
 
 
