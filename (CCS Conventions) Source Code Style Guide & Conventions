@@ -1,0 +1,76 @@
+
+CCS3 Conventions:
+Class Naming:
+Utilizar nombres significativos o genéricos para las clases. Estos nombres deben ser fácilmente entendibles y ser pocos propensos al cambio de nombre.
+BUENO
+.gallery {}
+.login {}
+.aux {}
+MALO
+.yee-1901 {}
+.button-green {}
+Class Name Delimiters:
+Separar palabras en un nombre de clase con guiones. No se deben concatenar las palabras ni abreviaciones
+BUENO
+.video-id {}
+.ads-sample {}
+MALO
+.demoimage {}
+.error_status {}
+Type Selectors:
+Evitar calificar los nombres de clases con selectores de tipo. A menos que sea necesario, no se debe usar nombres de elementos en conjunto con las clases.
+BUENO
+.error {}
+MALO
+div.error {}
+Declaration Order
+Se recomienda ordenar alfabéticamente. Reordenar las declaraciones constantemente dentro del proyecto. De esta manera, el código es fácil de aprender, recordar y mantener.
+Declaration Stops
+Utilizar punto y coma luego de cada declaración. Esto con razones de consistencia y extensibilidad del código.
+BUENO
+.test {
+  display: block;
+  height: 100px;
+}
+
+MALO
+.test {
+  display: block
+  height: 100px
+}
+Rule Separation
+Separar rules mediantes líneas nuevas. Siempre colocar una línea en blanco entre rules
+Ejemplo:
+html {
+  background: #fff;
+}
+
+body {
+  margin: auto;
+  width: 50%;
+}
+CSS Quotation Marks
+Utilizar comillas simples ( ‘ ‘ ) en vez de comillas dobles ( “ “ ) para los selectores de atributos y valores de propiedades. No utilizar comillas en valores de URL. Se puede hacer excepción de esta regla según el caso.
+BUENO
+@import url(https://www.google.com/css/maia.css);
+
+html {
+  font-family: 'open sans', arial, sans-serif;
+}
+MALO
+@import url("https://www.google.com/css/maia.css");
+
+html {
+  font-family: "open sans", arial, sans-serif;
+}
+Section Comments
+Agrupar secciones mediante un comentario de sección
+Ejemplo:
+/* Header */
+
+.adw-header {}
+
+/* Footer */
+
+.adw-footer {}
+

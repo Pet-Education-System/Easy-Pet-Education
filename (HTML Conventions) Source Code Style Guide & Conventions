@@ -1,0 +1,315 @@
+HTML5 Conventions:
+Usar nombres de elementos en minúscula 
+HTML nos da la facilidad de poder mezclar tanto las letras mayúsculas como las minúsculas.
+Sin embargo, se recomienda usar nombres de elementos en minúsculas, porque:
+Mezclar nombres en mayúsculas y minúsculas se ve mal
+Los desarrolladores normalmente usan nombres en minúsculas
+Las minúsculas se ven más limpias
+Minúsculas es más fácil de escribir
+BUENO:
+<body>
+<p>This is a paragraph.</p>
+</body>
+ 
+
+ 
+ 
+MALO:
+<BODY>
+<P>This is a paragraph.</P>
+</BODY>
+ 
+Cerrar todos los elementos HTML 
+En HTML, no se tiene que cerrar todos los elementos (por ejemplo, el <p> elemento).
+Sin embargo, se recomienda cerrar todos los elementos HTML, de esta forma: 
+
+BUENO:
+<section>
+  <p>This is a paragraph.</p>
+  <p>This is a paragraph.</p>
+</section>
+
+MALO:
+<section>
+  <p>This is a paragraph.
+  <p>This is a paragraph.
+</section>
+
+
+
+
+
+
+
+
+Usar nombres de atributos en minúsculas 
+HTML nos permite mezclar tanto letras mayúsculas como minúsculas en los nombres de los atributos.
+Sin embargo, es recomendable usar nombres de atributos en minúscula porque: 
+
+Mezclar nombres en mayúsculas y minúsculas se ve mal
+Los desarrolladores normalmente usan nombres en minúsculas
+Las minúsculas se ven más limpias
+Las minúsculas son más fáciles de escribir.
+ 
+BUENO:
+ <a href="https://www.w3schools.com/html/">Visit our HTML tutorial</a>
+MALO:
+<a HREF="https://www.w3schools.com/html/">Visit our HTML tutorial</a>
+
+Citar siempre valores de atributo
+HTML permite valores de atributo sin comillas.
+Sin embargo, se recomienda citar los valores de los atributos porque:
+Los desarrolladores normalmente citan valores de atributos
+Los valores citados son más fáciles de leer
+DEBE usar comillas si el valor contiene espacios
+ 
+BUENO:
+   <table class="striped">
+MALO:
+ <table class=striped>
+ 
+ 
+ 
+MUY MAL:
+Esto no funcionara porque este valor contiene espacios 
+<table class=table striped>
+ 
+Siempre especifique alt, ancho y alto para las imágenes 
+Especifique siempre el alt atributo de las imágenes. Este atributo es de suma importancia si la imagen por alguna razón no se puede mostrar.
+Adicionalmente, siempre deberá definir el width y height de las imágenes. Esto reduce el parpadeo, porque el navegador puede reservar espacio para la imagen antes de cargarla. 
+ 
+BUENO:
+<img src="html5.gif" alt="HTML5" style="width:128px;height:128px">
+MALO:
+<img src="html5.gif">
+ 
+Espacios y Signos Iguales 
+HTML permite espacios alrededor de signos iguales. Pero sin espacio es más fácil de poder leer y se llega a agrupar mejor las entidades. 
+ 
+BUENO:
+<link rel="stylesheet" href="styles.css">
+ 
+MALO:
+<link rel = "stylesheet" href = "styles.css">
+ 
+ 
+ 
+ 
+Evite líneas de código largas
+Al usar un editor HTML, NO no es conveniente desplazarse hacia la derecha y hacia la izquierda para leer el código HTML.
+Siempre trate de evitar líneas de código demasiado largas. 
+Líneas en blanco y sangría 
+No agregue líneas en blanco, espacios o sangrías sin una razón.
+Para facilitar la lectura, agregue líneas en blanco para separar bloques de código grandes o lógicos.
+Para facilitar la lectura, agregue dos espacios de sangría. No utilice la tecla de tabulación.
+BUENO:
+<body>
+ 
+<h1>Famous Cities</h1>
+ 
+<h2>Tokyo</h2>
+<p>Tokyo is the capital of Japan, the center of the Greater Tokyo Area, and the most populous metropolitan area in the world.</p>
+ 
+<h2>London</h2>
+<p>London is the capital city of England. It is the most populous city in the United Kingdom.</p>
+ 
+<h2>Paris</h2>
+<p>Paris is the capital of France. The Paris area is one of the largest population centers in Europe.</p>
+ 
+</body>
+ 
+ 
+ 
+ 
+MALO:
+<body>
+<h1>Famous Cities</h1>
+<h2>Tokyo</h2><p>Tokyo is the capital of Japan, the center of the Greater Tokyo Area, and the most populous metropolitan area in the world.</p>
+<h2>London</h2><p>London is the capital city of England. It is the most populous city in the United Kingdom.</p>
+<h2>Paris</h2><p>Paris is the capital of France. The Paris area is one of the largest population centers in Europe.</p>
+</body>
+ 
+BUEN EJEMPLO DE MESA:
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>A</td>
+    <td>Description of A</td>
+  </tr>
+  <tr>
+    <td>B</td>
+    <td>Description of B</td>
+  </tr>
+</table>
+ 
+ 
+ 
+BUEN EJEMPLO DE LISTA:
+<ul>
+  <li>London</li>
+  <li>Paris</li>
+  <li>Tokyo</li>
+</ul>
+ 
+Nunca omita el elemento <title>
+El <title> elemento es obligatorio en HTML.
+¡El contenido del título de una página es muy importante para la optimización de motores de búsqueda (SEO)! Los algoritmos de los motores de búsqueda utilizan el título de la página para decidir el orden al enumerar las páginas en los resultados de búsqueda.
+El <title> elemento:
+define un título en la barra de herramientas del navegador
+proporciona un título para la página cuando se agrega a favoritos
+muestra un título para la página en los resultados del motor de búsqueda
+Por lo tanto, intente que el título sea lo más preciso y significativo posible:
+<title>HTML Style Guide and Coding Conventions</title>
+ 
+¿Omitiendo <html> y <body>?
+Una página HTML se validará sin las etiquetas <html>y :<body>
+<!DOCTYPE html>
+<head>
+  <title>Page Title</title>
+</head>
+ 
+<h1>This is a heading</h1>
+<p>This is a paragraph.</p>
+Sin embargo, recomendamos encarecidamente agregar siempre las etiquetas <html> y .<body>
+Omitir <body>puede producir errores en navegadores más antiguos.
+Omitir <html>y <body> también puede bloquear el software DOM y XML.
+ 
+¿Omitir <cabeza>?
+La etiqueta HTML <head> también se puede omitir.
+Los navegadores agregarán todos los elementos anteriores <body>a un elemento predeterminado <head> .
+<!DOCTYPE html>
+<html>
+<title>Page Title</title>
+<body>
+ 
+<h1>This is a heading</h1>
+<p>This is a paragraph.</p>
+ 
+</body>
+</html>
+Sin embargo, recomendamos usar la <head>etiqueta.
+ 
+¿Cerrar elementos HTML vacíos?
+En HTML, es opcional cerrar elementos vacíos.
+ 
+ 
+ 
+PERMITIÓ:
+<meta charset="utf-8">
+TAMBIÉN PERMITIDO:
+<meta charset="utf-8" />
+Si espera que el software XML/XHTML acceda a su página, mantenga la barra inclinada de cierre (/), ya que se requiere en XML y XHTML.
+ 
+Agregue el atributo lang 
+Siempre debe incluir el lang tributo dentro de la <html>etiqueta, para declarar el idioma de la página web. Esto está destinado a ayudar a los motores de búsqueda y navegadores.
+EJEMPLO:
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <title>Page Title</title>
+</head>
+<body>
+ 
+<h1>This is a heading</h1>
+<p>This is a paragraph.</p>
+ 
+</body>
+</html>
+ 
+ 
+ 
+ 
+ 
+ 
+Metadatos
+Para garantizar una interpretación adecuada y una indexación correcta en los motores de búsqueda, tanto el idioma como la codificación de caracteres deben definirse lo antes posible en un documento HTML:<meta charset="charset">
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8">
+  <title>Page Title</title>
+</head>
+ 
+Configuración de la ventana gráfica
+La ventana gráfica es el área visible del usuario de una página web. Varía según el dispositivo: será más pequeño en un teléfono móvil que en la pantalla de una computadora.
+Debes incluir el siguiente <meta>elemento en todas tus páginas web:
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+Esto le da al navegador instrucciones sobre cómo controlar las dimensiones y la escala de la página.
+La width=device-width establece el ancho de la página para seguir el ancho de pantalla del dispositivo (que variará según el dispositivo).
+La initial-scale=1.0 parte establece el nivel de zoom inicial cuando el navegador carga la página por primera vez.
+ 
+Comentarios HTML
+Los comentarios cortos deben escribirse en una sola línea, así:
+<!-- This is a comment -->
+ 
+
+
+
+Los comentarios que ocupan más de una línea deben escribirse así:
+<!--
+  This is a long comment example. This is a long comment example.
+  This is a long comment example. This is a long comment example.
+-->
+Los comentarios largos son más fáciles de observar si están sangrados con dos espacios.
+ 
+Uso de hojas de estilo
+Use una sintaxis simple para vincular hojas de estilo (el type atributo no es necesario):
+<link rel="stylesheet" href="styles.css">
+Las reglas cortas de CSS se pueden escribir comprimidas, así:
+p.intro {font-family:Verdana;font-size:16em;}
+Las reglas CSS largas deben escribirse en varias líneas:
+body {
+  background-color: lightgrey;
+  font-family: "Arial Black", Helvetica, sans-serif;
+  font-size: 16em;
+  color: black;
+}
+Coloque el soporte de apertura en la misma línea que el selector
+Use un espacio antes del corchete de apertura
+Usar dos espacios de sangría
+Use punto y coma después de cada par propiedad-valor, incluido el último
+Solo use comillas alrededor de los valores si el valor contiene espacios
+Coloque el corchete de cierre en una nueva línea, sin espacios iniciales
+ 
+ 
+ 
+Cargando JavaScript en HTML
+Use una sintaxis simple para cargar scripts externos (el type atributo no es necesario):
+<script src="myscript.js">
+ 
+Acceso a elementos HTML con JavaScript
+El uso de código HTML "desordenado" puede generar errores de JavaScript.
+Estas dos declaraciones de JavaScript producirán resultados diferentes:
+EJEMPLO
+getElementById("Demo").innerHTML = "Hello";
+ 
+getElementById("demo").innerHTML = "Hello";
+ 
+Usar nombres de archivos en minúsculas
+
+Algunos servidores web (Apache, Unix) distinguen entre mayúsculas y minúsculas en los nombres de archivo: "londres.jpg" no se puede acceder como "London.jpg".
+Otros servidores web (Microsoft, IIS) no distinguen entre mayúsculas y minúsculas: se puede acceder a "london.jpg" como "London.jpg".
+Si usa una combinación de mayúsculas y minúsculas, debe tener esto en cuenta.
+Si pasa de un servidor que no distingue entre mayúsculas y minúsculas a uno que distingue entre mayúsculas y minúsculas, ¡incluso los errores más pequeños romperán su web!
+Para evitar estos problemas, ¡utilice siempre nombres de archivo en minúsculas!
+ 
+ 
+ 
+ 
+ 
+Extensiones de archivo
+Los archivos HTML deben tener una extensión .html ( se permite .htm ).
+Los archivos CSS deben tener una extensión .css .
+Los archivos JavaScript deben tener una extensión .js .
+ 
+¿Diferencias entre .htm y .html?
+¡No hay diferencia entre las extensiones de archivo .htm y .html!
+Ambos serán tratados como HTML por cualquier navegador web y servidor web.
+ 
+Nombres de archivo predeterminados
+Cuando una URL no especifica un nombre de archivo al final (como "https://www.w3schools.com/"), el servidor simplemente agrega un nombre de archivo predeterminado, como "index.html", "index.htm", " predeterminado.html" o "predeterminado.htm".
+Si su servidor está configurado solo con "index.html" como nombre de archivo predeterminado, su archivo debe llamarse "index.html" y no "default.html".
+Sin embargo, los servidores se pueden configurar con más de un nombre de archivo predeterminado; por lo general, puede configurar tantos nombres de archivo predeterminados como desee.

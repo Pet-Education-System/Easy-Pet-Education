@@ -1,0 +1,40 @@
+Gitflow:
+Se muestra los pasos para el flujo de nuestro proyecto:
+Crear la rama master en el que subirá los releases y hotfixes completos.
+Crear una rama develop donde se implementará los avances y la corrección de errores. Luego, esta rama se fusionará con la rama master añadiendo así los cambios realizados.
+Cada feature debe ser creado y desarrollado para unirse a la rama develop para luego fusionar con esta.
+Luego de añadir una determinada cantidad de features a la rama develop, y corregir errores, esta rama se unirá con la rama master para que así se lance una nueva versión del software.
+
+Semantic Versioning:
+Se emplea la etiqueta vMAJOR.MINOR.PATCH
+
+Donde: 
+MAJOR = versión donde se realiza un cambio significativo en el proyecto.
+MINOR = versión donde se añaden algunas funcionalidades.
+PATCH = versión donde se solucionan errores.
+
+Ejemplo: v1.2.0, que es la primera versión con dos adiciones de funcionalidades y ningún parche de corrección de errores.
+
+Conventional Commits:
+Sintaxis para cada commit: 
+<type>[optional scope]: <description>
+
+[optional body]
+
+[optional footer(s)]
+
+Donde: 
+[type]: puede ser de tipo fix, donde se soluciona un error en el código; y tipo feat, donde se introduce una nueva característica al código.
+[optional scope]: alcance del commit
+[opcional body]: complemento del commit
+[optional footer(s)]: información adicional del commit
+
+Ejemplo:
+fix: prevent unusual requests
+
+Introduce id and a reference to request. Dismiss incoming responses other than old requests.
+
+Remove timeouts which were used to end the unusual problem and make it  obsolete now.
+
+Reviewed-by: K
+Refs: #203
