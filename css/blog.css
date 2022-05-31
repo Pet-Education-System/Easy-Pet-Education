@@ -1,0 +1,18 @@
+#blog h3, h4 {
+    text-align: center;
+}
+
+#blog .contenedor{
+    display: flex; /* Para que las imágenes estén en una sola fila*/
+    justify-content: center;
+    flex-wrap: wrap; /* Para que los elementos que no encajen, se bajen*/
+}
+
+#blog article {
+    margin: 15px;
+}
+
+#blog img {
+    width: 100%;
+    max-width: 280px;
+}
