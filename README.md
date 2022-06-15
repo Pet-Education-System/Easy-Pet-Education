@@ -3,7 +3,7 @@ Easy Pet Education es una aplicación web la cual se encargará de ayudar a las 
 
 Este proyecto es elaborado para el curso de IHC y Tecnologias Moviles de la Universidad Peruana de Ciencias Aplicadas (UPC)
 
-Grupo 5
+Grupo 5.
 
 Integrantes:
 <br>
