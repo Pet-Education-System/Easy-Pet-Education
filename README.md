@@ -20,7 +20,5 @@ Nombres, Apellidos y Códigos
 -Juliana Alexandra, Yauricasa Seguil      (U20201B782)
 
  
- 
- 
 
   
